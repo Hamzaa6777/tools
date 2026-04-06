@@ -15,4 +15,4 @@ def detect_scan(packet):
             print(f"    [+] Target: Port {dst_port}")
             print(f"    [Action] Logged to Security Database.\n")
 
-sniff(filter="tcp", prn=detect_scan, store=0 , iface="lo0")
+sniff(filter="tcp", prn=detect_scan, store=0)
